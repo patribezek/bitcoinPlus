@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html ng-app="bitcoinPlus">
+<head>
+	<meta charset="utf-8">
+	<title>Bitcoin Plus</title>
+	<link href="img/coins.png" rel="shortcut icon">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS de Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<!-- Librería jQuery requerida por los plugins de JavaScript -->
+	<script src="http://code.jquery.com/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+
+  <!-- MIS ESTILOS -->
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js"></script>	
+  <script src="controller/controller.js"></script>  
+</head>
+
+<body>
+
+ <!-- HOME -->
+
+ <header>
+  <div class="menu"  > <!-- ng-controller="Menu" -->
+   <img class="hamburguer" src="img/white.svg" alt="&#9776;" >
+   <h1>Bitcoin Plus</h1>
+   
+ </div>
+ <navbar class="nav" >
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="history.html">History</a></li>
+    <li><a href="settings.html">Settings</a></li>
+    <li><a href="invite.html">Invite friends</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+  </ul>
+</navbar>
+</header>
+<div class = "amount" ng-controller="Clock">
+  <h3>Current Amount: <span>{{amount | currency: "Satoshi ": 0}}</span></h3>
+  <button>Withdraw</button>
+</div>
+<div class = "counter" ng-controller="Counter">
+  <p>	{{ counter }}</p>
+  <button>claim</button>
+  <div class="padre">
+   <button class="ask">?</button>
+   <div class="answer">550 Satoshi every 30 minutes</div>
+ </div>
+</div>
+
+<div class ="banner">	
+
+</div>
+
+
+<!-- SOCIAL
+
+<navbar class="social">
+  <ul>
+   <li><a href="">fb</a></li>
+   <li><a href="">tw</a></li>
+   <li><a href="">blog</a></li>
+ </ul>
+</navbar>
+ -->
+</body>
+
+</html>
+
+<!--
+	
+<--><!--
+	<div class="colors">
+		<button class="day">day</button>
+		<button class="night">night</button>
+		<button class="vintage">vintage</button>
+		<button class="techno">techno</button>
+		<button class="candy">candy</button>
+		<button class="rainbow">rainbow</button>
+		<button class="car">car</button>
+		<button class="light">light</button>
+		<button class="cat">cat</button>
+	</div> 
+	</-->
+
+	<!-- never give up -->
